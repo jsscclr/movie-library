@@ -1,7 +1,0 @@
-require 'rspec/its'
-require './actor'
-
-RSpec.describe Actor do
-
-
-end
