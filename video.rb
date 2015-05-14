@@ -1,6 +1,6 @@
 class Video
 
-  attr_reader :title, :year :director
+  attr_reader :title, :year, :director
 
   def initialize (title, year, director)
     @title = title
