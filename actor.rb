@@ -7,9 +7,4 @@ class Actor
     @movies = movies
   end
 
-  def add_to_video_credits
-    @movies.each do |movie|
-      movie.add_credits(@name)
-    end
-  end
 end
