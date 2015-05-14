@@ -6,7 +6,7 @@ RSpec.describe Video do
   let(:actor2) { Actor.new('Brad Pitt') }
   let(:director) { "David Fincher" }
   let(:credits) { [ actor1, actor2, director ] }
-  subject(:movie) { Video.new('Fight Club', '1999', director, actors) }
+  subject(:movie) { Video.new('Fight Club', '1999', director, [actor1, actor2]) }
 
   # Videos should have a title, year and director.
   its(:title) { is_expected.to eq('Fight Club') }
@@ -17,6 +17,6 @@ RSpec.describe Video do
   # Allow a movie to have many actors.
   its(:credits) { is_expected.to include(actor1) }
   its(:credits) { is_expected.to include(actor2) }
-  its(:credits) { is_expected.to include(director) } 
-  
+  its(:credits) { is_expected.to include(director) }
+
 end

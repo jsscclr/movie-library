@@ -7,7 +7,7 @@ RSpec.describe Library do
   let(:lego_movie) { Video.new( 'The Lego Movie', '2014', 'Phil Lord', [ 'Chris Pratt', 'Will Ferrell', 'Elizabeth Banks' ] ) }
   let(:grand_budapest) { Video.new( 'The Grand Budapest Hotel', '2014', 'Wes Anderson', ['Ralph Fiennes', 'F. Murray Abraham', 'Mathieu Amalric'] ) }
   let(:ida) { Video.new( 'Ida', 'Pawel Pawlikowski', [ 'Agata Kulesza', 'Agata Trzebuchowska', 'Dawid Ogrodnik' ] ) }
-  
+
   describe '#add_video' do
     specify 'adds a video to the library' do
       subject.add_video(lego_movie)
