@@ -1,4 +1,4 @@
-# Compiled source #
+coverage/*
 ###################
 *.com
 *.class
@@ -35,4 +35,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
